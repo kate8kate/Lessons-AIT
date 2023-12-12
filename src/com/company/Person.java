@@ -2,17 +2,21 @@ package com.company;
 
 public class Person {
 
-    private String name;
+    String firstName;
+    String lastName;
+    MyDate birthday;
 
-    public Person(String name) {
-        this.name = name;
+
+    public Person(String firstName, String lastName, MyDate birthday) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+
     }
 
     public String toString() {
-        return name;
-    }
 
-    public String getName() {
-        return name;
+        return firstName + " " + lastName + "(" + birthday + ")";
+
     }
 }
